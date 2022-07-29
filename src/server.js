@@ -1,8 +1,8 @@
+require('dotenv').config({ path: './.env.local' })
+
 const path = require('path');
 const express = require('express');
 const router = require('./lib/router');
-
-const { PORT = 3001 } = process.env;
 
 const app = express();
 
@@ -21,5 +21,5 @@ app.get('*', (_req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server listening at http://localhost:${PORT}`);
+  console.log(`Server listening at http://localhost:${process.env.PORT || 3001}`);
 });

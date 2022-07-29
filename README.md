@@ -7,8 +7,6 @@ This boilerplate is a fork of [lmachens/vite-boilerplate](https://github.com/lma
 This boilerplate contains all the tools you need to build a modern web app with JavaScript, React, Vite, and Express.  
 You can use it to quickly bootstrap your project.
 
-ESLint, stylelint, prettier, husky and lintstaged are configured to give you a solid development experience.
-
 ## Installing / Developing
 
 First, [create a repository from this template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template).
@@ -39,11 +37,11 @@ npm run server:dev
 npm run client:dev
 ```
 
-You can configure the server port by setting the `PORT` environment variable. Creating a `.env` file is supported. You can copy `.env.example` to `.env`.
+You can configure the server port by setting the `PORT` environment variable. Creating a `.env.local` file is supported. You can copy `.env.example` to `.env.local`.
 
-| KEY  | VALUE                                                         |
-| ---- | ------------------------------------------------------------- |
-| PORT | (Optional) Port for the server environment (defaults to 3001) |
+| KEY      | VALUE                                                         |
+| -------- | ------------------------------------------------------------- |
+| API_PORT | (Optional) Port for the server environment (defaults to 3001) |
 
 ## Building
 
@@ -63,10 +61,6 @@ In production, you have a single server serving everything.
 
 `/api/*` is the API endpoint.  
 `/*` is the client.
-
-## Tests
-
-A test runner is not installed (right now). But ESLint and Prettier are checked on commit and pushed thanks to husky and lintstaged.
 
 ## Licensing
 
