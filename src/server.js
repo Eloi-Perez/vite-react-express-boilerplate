@@ -20,6 +20,7 @@ app.get('*', (_req, res) => {
   res.sendFile(path.join(__dirname, 'app/index.html'));
 });
 
+const PORT = process.env.API_PORT || 3001;
 app.listen(PORT, () => {
-  console.log(`Server listening at http://localhost:${process.env.PORT || 3001}`);
+  console.log(`Server listening at http://localhost:${PORT}`);
 });
